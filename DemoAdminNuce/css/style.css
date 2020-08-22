@@ -1,0 +1,41 @@
+.Admin_link {
+  margin-left: 30px;
+  width: 230px
+  text-align: center;
+  font-size: 35px;
+  line-height: 50px;
+  font-family: "Times";
+  color: white;
+}
+
+a.Admin_link:hover, a.Admin_link:active {
+  color: #ef5777;
+  text-decoration: none;
+}
+
+.search__button {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    border: 0;
+    background: none;
+    font-size: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  padding: 70px 0 0 10px;
+}
+
+.left-sidebar {
+  position: sticky;
+  top:0;
+  height: calc(100vh - 70px)
+}
+
+.btn-outline-primary:hover {
+  background-color: #e67e22;
+}

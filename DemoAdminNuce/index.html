@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminNuce</title>
+  <!-- Import Boostrap css, js, font awesome  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#3498db;">
+    <!-- Admin link -->
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="Admin_link" href="index.html">Admin</a>
+      </li>
+    </ul>
+
+    <!-- Logo -->
+    <a class="Logo_link" href="index.html">
+      <i class='fas fa-laptop-code ml-5' style="font-size:35px; color:black;"></i>
+    </a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-globe"></i>View website
+          </a>
+        </li>
+
+        <!-- Dropdown giao diện -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Giao diện
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Black</a>
+            <a class="dropdown-item" href="#">Default</a>
+          </div>
+        </li>
+        <!-- Dropdown ngôn ngữ -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Ngôn ngữ
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">
+              <img class="img-fluid" src="img/England_Flag.jpg" style="width:50px;"> Tiếng Anh</a>
+            <a class="dropdown-item" href="#">
+              <img class="img-fluid" src="img/VietNam_Flag.png" style="width:50px;"> Tiếng Việt
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+
+          <!-- form intput and Search button  -->
+          <div class="input-group">
+            <input class="form-control py-1" type="search" placeholder="Search...">
+            <div class="input-group-append" style="background-color:white;">
+              <button class="btn btn-outline-primary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-user fa-lg" style="font-size:30px;"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- container main -->
+  <div class="container-fluid" style="background-color:#e5e5e5;">
+    <div class="row">
+
+      <!-- left sidebar -->
+      <div class="col-md-2" style="background-color:#2a4f69">
+        <div class="left-sidebar">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs flex-column d-flex sidebar-nav" style="padding-top:50px; font-size:16px;">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fa fa-home" style="color:#ecf0f1;"></i>
+                <span class="title" style="color:pink">Bảng điều khiển </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Trang">
+                <i class="fa fa-book" style="color:#ecf0f1;"></i>
+                <span class="title" style="color:pink;">Trang</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Blogs">
+                <i class="fa fa-edit" style="color:#ecf0f1"></i>
+                <span class="title" style="color:pink">Blogs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ThuVienAnh">
+                <i class="fa fa-camera" style="color:#ecf0f1"></i>
+                <span class="title" style="color:pink">Thư viện ảnh</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--  Tab panes -->
+      <div class="tab-content col-md-9 ">
+        <div id="index.html" class="container tab-pane active"><br>
+          <h3>Bảng điều khiển</h3>
+          <p>Danh sách sinh viên xuất sắc.</p>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên</th>
+                <th scope="col">Lớp</th>
+                <th scope="col">Gmail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Tuấn</td>
+                <td>CS1</td>
+                <td>tuan@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Son</td>
+                <td>CS2</td>
+                <td>son@gmail.com</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">3</th>
+                <td>Thanh</td>
+                <td>CS3</td>
+                <td>thanh@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div id="Trang" class="container tab-pane fade"><br>
+          <h3>Trang</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="Blogs" class="container tab-pane fade"><br>
+          <h3>Blogs</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="ThuVienAnh" class="container tab-pane fade"><br>
+          <h3>Thư viện ảnh</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <!-- end Tab panes -->
+
+    </div>
+    <!-- end row main -->
+
+  </div>
+  <!-- end container main -->
+
+  <!--  change main when click to link -->
+  <script>
+    $(document).ready(function() {
+      $(".nav-tabs a").click(function() {
+        $(this).tab('show');
+      });
+    });
+  </script>
+
+
+
+</body>
+</html>
